@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  db:
+    image: postgres:11
+    environment:
+      POSTGRES_PASSWORD: auth
+      POSTGRES_DB: auth
+      POSTGRES_USER: auth
+    ports:
+      - '5440:5432'
